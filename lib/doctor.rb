@@ -22,4 +22,11 @@ class Doctor
       appointment.doctor == self
     end
   end
+
+  def patients
+    appointments.all.map do |variable|
+        appointment.patient
+    end
+    
+  end
 end
