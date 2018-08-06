@@ -14,4 +14,11 @@ class Patient
       appointment.patient == self
     end
   end
+
+  def doctors
+      appointments.map do |app|
+        app.doctor
+      end
+  end
+
 end
