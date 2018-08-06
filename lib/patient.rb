@@ -5,10 +5,10 @@ class Patient
 
   def initialize(name)
     @name = name
-    # @@all << self
+    @@all << self
   end
 
-  def all
+  def self.all
     @@all
   end
 end
